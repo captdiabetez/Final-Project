@@ -10,19 +10,21 @@ using AssetASP.Models;
 
 namespace Final_Project.Pages
 {
-    private readonly AssetDbContext _context; // Repaces "db" variable
-    public class IndexModel : PageModel
+    public class InndexModel : PageModel
     {
+        private readonly AssetDbContext _context; // Repaces "db" variable
+        public List<User> Users {get; set;}
         private readonly ILogger<IndexModel> _logger;
 
         public IndexModel(AssetDbContext context, ILogger<IndexModel> logger)
         {
+            _context = context;
             _logger = logger;
         }
 
         public void OnGet()
         {
-
+            Users = _context.Users.ToList();
         }
     }
 }
