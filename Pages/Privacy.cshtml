@@ -7,4 +7,10 @@
 
 <p>Use this page to detail your site's privacy policy.</p>
 
+<p>List of Assets:</p>
+@foreach (var b in Model.Assets)
+{
+    <p>@Html.DisplayFor(modelItem => b.DeviceName) @Html.DisplayFor(modelItem => b.DeviceType) @Html.DisplayFor(modelItem => b.Description)</p>
+}
+
 

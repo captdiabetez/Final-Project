@@ -16,7 +16,7 @@ namespace Final_Project.Pages
         public List<Asset> Assets {get; set;}
         private readonly ILogger<PrivacyModel> _logger;
 
-        public PrivacyModel(ILogger<PrivacyModel> logger)
+        public PrivacyModel(AssetDbContext context, ILogger<PrivacyModel> logger)
         {
             _context = context;
             _logger = logger;
