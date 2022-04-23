@@ -10,7 +10,7 @@ using AssetASP.Models;
 
 namespace Final_Project.Pages
 {
-    public class InndexModel : PageModel
+    public class IndexModel : PageModel
     {
         private readonly AssetDbContext _context; // Repaces "db" variable
         public List<User> Users {get; set;}
