@@ -4,7 +4,7 @@ namespace AssetASP.Models
 {
     public class Asset 
     {
-        public int AssetTagId {get; set;}
+        public int AssetTagId {get; set;}  // Primary Key
         public string DeviceName {get; set;}
         public string DeviceType {get; set;}
         public string Description {get; set;}
