@@ -81,16 +81,6 @@ namespace AssetASP.Models
                     {
                         return; // DB has been seeded
                     }
-
-                    context.Assets.AddRange(
-                        new Asset
-                        {
-                            DeviceName = "JH-STA-01",
-                            DeviceType = "Computer",
-                            Description = "Computer used as a workstation"
-                        }
-                    );
-                    context.SaveChanges();
                 }
         }
     }
