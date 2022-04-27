@@ -10,7 +10,7 @@ using AssetASP.Models;
 
 namespace Final_Project.Pages
 {
-    public class InvnetoryModel : PageModel
+    public class InventoryModel : PageModel
     {
         private readonly AssetDbContext _context; // Repaces "db" variable
         public List<Asset> Assets {get; set;}
