@@ -14435,6 +14435,11 @@
       "FilePath": "c:\\Users\\Admin\\3312\\Final-Project\\Pages\\_ViewStart.cshtml",
       "TargetPath": "Pages\\_ViewStart.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Admin\\3312\\Final-Project\\Pages\\Inventory.cshtml",
+      "TargetPath": "Pages\\Inventory.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"
