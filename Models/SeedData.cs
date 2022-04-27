@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Linq;
+using System.Collections.Generic;
 
 namespace AssetASP.Models
 {
@@ -21,7 +22,10 @@ namespace AssetASP.Models
                         new User
                         {
                             FirstName ="John",
-                            LastName = "Hernandez"
+                            LastName = "Hernandez",
+                            Assets = new List<Asset> {
+                                new Asset {DeviceName = "JAS-103-STA-01", DeviceType = "Desktop", Description = "Workstation Computer"}
+                            }
                         },
 
                         new User
